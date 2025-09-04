@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 gsap.from(".hero", { opacity: 0, scale: 1.05, duration: 1.5 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
