@@ -340,6 +340,123 @@ form button:hover {
     }
 }
 
+/* ========================= */
+/* Mobile & Tablet Adjustments */
+/* ========================= */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .navbar ul li {
+        margin-left: 15px;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* For phones */
+@media (max-width: 768px) {
+    /* Navbar stacks */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo img {
+        max-height: 70px;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh; /* shrink so text isn’t cut */
+        padding: 0 15px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+
+    /* Features */
+    .features {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 10px;
+    }
+    .feature-item {
+        width: 90%;
+    }
+
+    /* Services */
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-item.reverse {
+        flex-direction: column;
+    }
+    .service-img img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .service-text {
+        max-width: 100%;
+    }
+
+    /* About */
+    .about {
+        margin-top: 100px;
+        padding: 0 15px;
+    }
+    .about-img {
+        width: 80%;
+    }
+    .about-text h1 {
+        font-size: 2em;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 100px 10px 40px 10px;
+    }
+    .contact-container h1 {
+        font-size: 2em;
+    }
+    .contact-container p {
+        font-size: 1em;
+    }
+}
+
+/* Tiny phones */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    form input,
+    form textarea {
+        font-size: 0.9em;
+    }
+}
 
 
 /* Footer */
