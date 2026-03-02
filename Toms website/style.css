@@ -348,111 +348,208 @@ footer {
 .therapist-hero p {
     font-size: 1.2em;
     color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .therapist-intro {
-    max-width: 800px;
-    margin: 0 auto 60px auto;
+    max-width: 820px;
+    margin: 0 auto 50px auto;
     text-align: center;
     font-size: 1.1em;
     color: #7f8c8d;
     line-height: 1.8;
 }
 
-.therapist-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 70px;
-}
-
-.therapist-card {
-    background-color: #fff;
+/* Qualifications Banner */
+.qualifications-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    background-color: #2c3e50;
+    color: #fff;
     border-radius: 10px;
-    padding: 35px 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+    padding: 40px;
+    margin-bottom: 60px;
 }
 
-.therapist-card:hover {
-    transform: translateY(-6px);
+.qual-icon {
+    font-size: 3em;
+    flex-shrink: 0;
+    line-height: 1;
 }
 
-.therapist-card-icon {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
-
-.therapist-card h2 {
-    font-size: 1.4em;
-    color: #2c3e50;
+.qual-text h2 {
+    font-size: 1.6em;
+    color: #fff;
     margin-bottom: 12px;
 }
 
-.therapist-card p {
-    font-size: 1em;
-    color: #7f8c8d;
+.qual-text p {
+    font-size: 1.05em;
+    color: #bdc3c7;
     line-height: 1.7;
 }
 
-.therapist-difference {
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    padding: 50px 40px;
+.qual-text strong {
+    color: #f39c12;
+}
+
+.qual-text em {
+    color: #aed5fc;
+    font-style: normal;
+}
+
+/* Goals Section */
+.goals-section {
     margin-bottom: 70px;
 }
 
-.therapist-difference h2 {
-    text-align: center;
+.goals-section > h2 {
     font-size: 2em;
     color: #2c3e50;
-    margin-bottom: 35px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.difference-grid {
-    display: flex;
-    gap: 30px;
-}
-
-.difference-col {
-    flex: 1;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-.difference-col h3 {
-    font-size: 1.3em;
-    color: #f39c12;
-    margin-bottom: 18px;
-    border-bottom: 2px solid #f39c12;
-    padding-bottom: 10px;
-}
-
-.difference-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.difference-col ul li {
+.goals-intro {
+    text-align: center;
     color: #7f8c8d;
     font-size: 1em;
-    padding: 8px 0;
-    border-bottom: 1px solid #ecf0f1;
-    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
-.difference-col ul li:last-child {
+.goals-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.tab-btn {
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 30px 30px 0 0;
+    padding: 12px 22px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+    background-color: #d5dbdb;
+    color: #2c3e50;
+}
+
+.tab-btn.active {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.tab-content {
+    background-color: #fff;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 35px 40px;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.goal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goal-list li {
+    padding: 12px 0 12px 30px;
+    position: relative;
+    color: #7f8c8d;
+    font-size: 1.05em;
+    line-height: 1.6;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.goal-list li:last-child {
     border-bottom: none;
 }
 
-.difference-col ul li::before {
-    content: "✓ ";
+.goal-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
     color: #f39c12;
     font-weight: bold;
 }
 
+/* Why Music Section */
+.why-music-section {
+    margin-bottom: 70px;
+}
+
+.why-music-section > h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.why-music-intro {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.05em;
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+}
+
+.why-music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-music-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.why-music-card:hover {
+    transform: translateY(-5px);
+}
+
+.why-icon {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.why-music-card h3 {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.why-music-card p {
+    font-size: 0.95em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* CTA */
 .therapist-cta {
     text-align: center;
     padding: 60px 20px;
@@ -645,16 +742,28 @@ footer {
         font-size: 2em;
     }
 
-    .therapist-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .difference-grid {
+    .qualifications-banner {
         flex-direction: column;
+        padding: 30px 20px;
     }
 
-    .therapist-difference {
-        padding: 30px 20px;
+    .goals-tabs {
+        gap: 6px;
+    }
+
+    .tab-btn {
+        padding: 10px 14px;
+        font-size: 0.9em;
+        border-radius: 6px;
+    }
+
+    .tab-content {
+        border-radius: 10px;
+        padding: 25px 20px;
+    }
+
+    .why-music-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -665,5 +774,19 @@ footer {
 
     .therapist-cta h2 {
         font-size: 1.5em;
+    }
+
+    .why-music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .goals-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-btn {
+        border-radius: 6px;
+        text-align: left;
     }
 }
