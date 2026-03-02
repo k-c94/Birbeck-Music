@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tom - Birbeck Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Music Therapy Logo"></a>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music-therapist.html">What is a Music Therapist?</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-page">
+
+        <!-- Page Heading -->
+        <section class="about-hero">
+            <h1>About Tom</h1>
+            <p>Music Therapist &bull; Belfast &amp; Surrounding Areas</p>
+        </section>
+
+        <!-- Intro: Photo + Summary -->
+        <section class="about-intro-section">
+            <img src="images/about-tom.jpg" alt="Tom, Music Therapist" class="about-portrait">
+            <div class="about-intro-text">
+                <h2>Hi, I'm Tom</h2>
+                <p>I'm a music therapist based in Belfast, running Birbeck Music across the city and surrounding areas. I hold an MA in Music Therapy from the University of Limerick (2022) and work across care homes, schools, hospitals, and community settings &mdash; using music purposefully to support the social, emotional, physical, cognitive, and communication needs of the people I work with.</p>
+            </div>
+        </section>
+
+        <!-- Journey -->
+        <section class="journey-section">
+            <h2>The Journey</h2>
+            <div class="journey-cards">
+                <div class="journey-card">
+                    <span class="journey-year">2015</span>
+                    <h3>Musical Beginnings</h3>
+                    <p>Growing up in Deal, Kent, Tom played in bands from an early age and went on to complete a BA (Hons) in Popular Music at Falmouth University. Music has always been central to everything.</p>
+                </div>
+                <div class="journey-card">
+                    <span class="journey-year">2016</span>
+                    <h3>Northern Ireland &amp; Birbeck Music</h3>
+                    <p>After moving to Northern Ireland, Tom began working in residential facilities for adults with learning difficulties, learning how to personalise approaches and communication for individual needs. Alongside this he started teaching guitar, bass, ukulele, and music theory under the Birbeck Music name &mdash; which went full-time within six months.</p>
+                </div>
+                <div class="journey-card">
+                    <span class="journey-year">2022</span>
+                    <h3>MA in Music Therapy</h3>
+                    <p>Tom completed his MA in Music Therapy at the University of Limerick, working as a trainee alongside experienced practitioners across neuro-rehabilitation, a motor neuron clinic, special schools, care homes, and adult services for learning difficulties and mental health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualifications -->
+        <section class="about-quals-strip">
+            <div class="about-quals-inner">
+                <div class="about-qual-item">
+                    <span class="about-qual-icon">&#127891;</span>
+                    <div>
+                        <h3>MA Music Therapy</h3>
+                        <p>University of Limerick &mdash; 2022</p>
+                        <p class="qual-detail">Clinical placements across acquired brain injury, neurological disorders, special schools, older adults in care homes, adults in day centres, and a motor neuron clinic.</p>
+                    </div>
+                </div>
+                <div class="about-qual-item">
+                    <span class="about-qual-icon">&#127891;</span>
+                    <div>
+                        <h3>BA (Hons) Popular Music</h3>
+                        <p>Falmouth University &mdash; 2015</p>
+                        <p class="qual-detail">Specialisation in performance, composition, and music theory &mdash; the foundation of a career in music.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Work -->
+        <section class="current-work-section">
+            <h2>Current Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <h3>Post-Primary Counselling</h3>
+                    <p>Working as a post-primary counsellor, drawing on music therapy training to support young people's emotional and mental wellbeing.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Group Music Therapy</h3>
+                    <p>Delivering group music therapy sessions to care homes and residential facilities across Belfast and the surrounding areas.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Performance</h3>
+                    <p>Performing in care homes, hospitals, residential facilities, and at weddings &mdash; bringing live music to a wide range of settings.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Guitar Tuition</h3>
+                    <p>Continuing to teach guitar, bass, ukulele, and music theory to students of all levels through Birbeck Music.</p>
+                </div>
+            </div>
+            <p class="additional-work-note">Additional work has included facilitating groups in a bail hostel, 1:1 sessions in a child development clinic, and group and individual sessions in day centres for adults with learning difficulties.</p>
+        </section>
+
+        <!-- Personal -->
+        <section class="personal-section">
+            <h2>Outside the Clinic</h2>
+            <p>When not working, Tom plays electric guitar, enjoys woodworking, and continues to perform.</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Birbeck Music | <a href="https://github.com/k-c94">Designed by kc94</a> | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birbeck Music | Music Therapy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Music Therapy Logo"></a>
+    </div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music-therapist.html">What is a Music Therapist?</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Birbeck Music</h1>
+            <h2>Professional Music Therapy</h2>
+            <p>Supporting individuals across care homes, schools, hospitals, and more — through the power of music.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn-primary">Explore Our Services</a>
+                <a href="music-therapist.html" class="btn-secondary">What is a Music Therapist?</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="home-intro">
+        <h2>What We Do</h2>
+        <p>Birbeck Music offers individual and group music therapy led by a fully qualified, HCPC-registered music therapist. Sessions address social, emotional, physical, cognitive, and communication goals — tailored to the needs of each person and each setting.</p>
+        <a href="about.html" class="home-intro-link">Meet the therapist &rarr;</a>
+    </section>
+
+    <!-- Philosophy Strip -->
+    <section class="philosophy-strip">
+        <p class="philosophy-stmt">Working with people, not conditions</p>
+        <span class="philosophy-divider"></span>
+        <p class="philosophy-stmt philosophy-stmt--accent">Be curious</p>
+        <span class="philosophy-divider"></span>
+        <p class="philosophy-stmt philosophy-stmt--feature">In a world where everyone is trying to be cool, be warm</p>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="features">
+        <a href="services.html" class="feature-item">
+            <img src="images/pop1.png" alt="Music Therapy Sessions">
+            <h3>Our Services</h3>
+            <p>Individual and group sessions across care homes, special schools, acquired brain injury settings, and neurological disease — shaped around each client.</p>
+            <span class="feature-link">Learn more &rarr;</span>
+        </a>
+        <a href="music-therapist.html" class="feature-item">
+            <img src="images/pop2.png" alt="What is a Music Therapist">
+            <h3>What is a Music Therapist?</h3>
+            <p>A registered healthcare professional using music to address clinical goals. Find out what sets music therapy apart and why music works so effectively.</p>
+            <span class="feature-link">Learn more &rarr;</span>
+        </a>
+        <a href="contact.html" class="feature-item">
+            <img src="images/pop3.png" alt="Get in Touch">
+            <h3>Get in Touch</h3>
+            <p>Whether you are an individual, a family member, or a care facility looking to offer music therapy — we would love to hear from you.</p>
+            <span class="feature-link">Contact us &rarr;</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Birbeck Music | <a href="https://github.com/k-c94">Designed by kc94</a> | All Rights Reserved</p>
+    </footer>
+
+<script>
+    // Mobile menu toggle
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // GSAP animations
+    gsap.from(".hero h1", { opacity: 0, y: -40, duration: 1, delay: 0.3 });
+    gsap.from(".hero h2", { opacity: 0, y: -20, duration: 1, delay: 0.6 });
+    gsap.from(".hero p",  { opacity: 0, y: 20,  duration: 1, delay: 0.9 });
+    gsap.from(".hero-buttons", { opacity: 0, y: 20, duration: 1, delay: 1.2 });
+    gsap.from(".feature-item", { opacity: 0, y: 60, stagger: 0.15, duration: 0.8, delay: 0.2 });
+</script>
+</body>
+</html>
