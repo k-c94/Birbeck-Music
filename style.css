@@ -78,8 +78,8 @@ a {
 .hero {
     background-image: url('images/main.jpg');
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: center 40%;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
