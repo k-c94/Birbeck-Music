@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birbeck Music | Heal Through Sound</title>
+    <title>Birbeck Music | Music Therapy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script> <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -31,29 +31,42 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Birbeck Music</h1>
-            <h1>Heal Through Sound</h1>
-            <p>Discover the power of music therapy for mental and emotional wellness.</p>
-            <a href="services.html" class="btn-primary">Explore Our Services</a>
+            <h2>Professional Music Therapy</h2>
+            <p>Supporting individuals across care homes, schools, hospitals, and more — through the power of music.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn-primary">Explore Our Services</a>
+                <a href="music-therapist.html" class="btn-secondary">What is a Music Therapist?</a>
+            </div>
         </div>
     </header>
 
-    <!-- Features Section -->
+    <!-- Intro Section -->
+    <section class="home-intro">
+        <h2>What We Do</h2>
+        <p>Birbeck Music offers individual and group music therapy led by a fully qualified, HCPC-registered music therapist. Sessions address social, emotional, physical, cognitive, and communication goals — tailored to the needs of each person and each setting.</p>
+        <a href="about.html" class="home-intro-link">Meet the therapist &rarr;</a>
+    </section>
+
+    <!-- Feature Cards -->
     <section class="features">
-        <div class="feature-item">
-            <img src="images/pop1.png" alt="Therapy Sessions">
-            <h3>Personalized Sessions</h3>
-            <p>Customized therapy plans tailored for your unique needs and goals.</p>
-        </div>
-        <div class="feature-item">
-            <img src="images/pop2.png" alt="Group Sessions">
-            <h3>Group Therapy</h3>
-            <p>Join a supportive community of individuals on their healing journeys.</p>
-        </div>
-        <div class="feature-item">
-            <img src="images/pop3.png" alt="Sound Healing">
-            <h3>Sound Healing</h3>
-            <p>Utilizing sound waves and frequencies to promote emotional balance.</p>
-        </div>
+        <a href="services.html" class="feature-item">
+            <img src="images/pop1.png" alt="Music Therapy Sessions">
+            <h3>Our Services</h3>
+            <p>Individual and group sessions across care homes, special schools, acquired brain injury settings, and neurological disease — shaped around each client.</p>
+            <span class="feature-link">Learn more &rarr;</span>
+        </a>
+        <a href="music-therapist.html" class="feature-item">
+            <img src="images/pop2.png" alt="What is a Music Therapist">
+            <h3>What is a Music Therapist?</h3>
+            <p>A registered healthcare professional using music to address clinical goals. Find out what sets music therapy apart and why music works so effectively.</p>
+            <span class="feature-link">Learn more &rarr;</span>
+        </a>
+        <a href="contact.html" class="feature-item">
+            <img src="images/pop3.png" alt="Get in Touch">
+            <h3>Get in Touch</h3>
+            <p>Whether you are an individual, a family member, or a care facility looking to offer music therapy — we would love to hear from you.</p>
+            <span class="feature-link">Contact us &rarr;</span>
+        </a>
     </section>
 
     <!-- Footer -->
@@ -61,15 +74,20 @@
         <p>&copy; Birbeck Music | kc94 | All Rights Reserved</p>
     </footer>
 
-    <script src="js/script.js"></script>
-</body>
-</html>
-
 <script>
+    // Mobile menu toggle
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
-
     burger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+    // GSAP animations
+    gsap.from(".hero h1", { opacity: 0, y: -40, duration: 1, delay: 0.3 });
+    gsap.from(".hero h2", { opacity: 0, y: -20, duration: 1, delay: 0.6 });
+    gsap.from(".hero p",  { opacity: 0, y: 20,  duration: 1, delay: 0.9 });
+    gsap.from(".hero-buttons", { opacity: 0, y: 20, duration: 1, delay: 1.2 });
+    gsap.from(".feature-item", { opacity: 0, y: 60, stagger: 0.15, duration: 0.8, delay: 0.2 });
 </script>
+</body>
+</html>
