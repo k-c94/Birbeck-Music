@@ -560,29 +560,79 @@ a {
 
 /* Contact Section */
 .contact {
-    display: flex;
-    justify-content: center;
-    padding: 140px 20px 60px 20px;
+    padding: 140px 20px 80px 20px;
     background-color: #f8f8f8;
 }
 
-.contact-container {
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+.contact-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
 }
 
-.contact-container h1 {
-    font-size: 2.5em;
+.contact-info h1 {
+    font-size: 2.2em;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-.contact-container p {
-    font-size: 1.1em;
-    color: #7f8c8d;
-    margin-bottom: 40px;
-    line-height: 1.6;
+.contact-info > p {
+    font-size: 1.05em;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-left: 3px solid #f39c12;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contact-detail-label {
+    font-size: 0.78em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #f39c12;
+}
+
+.contact-detail-item span:not(.contact-detail-label) {
+    font-size: 1.05em;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.contact-detail-item a {
+    font-size: 1.05em;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.contact-detail-item a:hover {
+    color: #f39c12;
+}
+
+.contact-form-wrapper {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
 }
 
 /* Form styles */
@@ -1362,15 +1412,16 @@ footer {
 
     /* Contact adjustments */
     .contact {
-        padding: 100px 10px 40px 10px;
+        padding: 100px 15px 50px 15px;
     }
 
-    .contact-container h1 {
-        font-size: 2em;
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
-    .contact-container p {
-        font-size: 1em;
+    .contact-info h1 {
+        font-size: 1.8em;
     }
 }
 
