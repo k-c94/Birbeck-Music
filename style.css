@@ -200,6 +200,9 @@ a {
     color: rgba(255,255,255,0.85);
 }
 
+.page-hero.services-hero-bg { background-image: url('images/services-hero.jpg'); }
+.page-hero.therapist-hero-bg { background-image: url('images/therapist-hero.jpg'); }
+
 /* Home Intro */
 .home-intro {
     text-align: center;
