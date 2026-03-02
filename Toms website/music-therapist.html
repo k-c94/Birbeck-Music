@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Music Therapist? - Birbeck Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Music Therapy Logo">
+    </div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="music-therapist.html">What is a Music Therapist?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Page Content -->
+    <section class="therapist-page">
+
+        <div class="therapist-hero">
+            <h1>What is a Music Therapist?</h1>
+            <p>Trained professionals who use music to support health, well-being, and quality of life.</p>
+        </div>
+
+        <div class="therapist-intro">
+            <p>A music therapist is a board-certified healthcare professional who uses music purposefully within a therapeutic relationship to support development, health, and well-being. Music therapists are not just musicians — they are trained clinicians who assess each client's needs and design evidence-based interventions using music.</p>
+        </div>
+
+        <div class="therapist-cards">
+
+            <div class="therapist-card">
+                <div class="therapist-card-icon">&#127925;</div>
+                <h2>Education &amp; Training</h2>
+                <p>Music therapists complete an accredited university degree in music therapy, including coursework in psychology, neuroscience, music theory, and clinical practice. They then complete a supervised internship before sitting a board certification exam.</p>
+            </div>
+
+            <div class="therapist-card">
+                <div class="therapist-card-icon">&#129504;</div>
+                <h2>How They Work</h2>
+                <p>Sessions may involve listening to music, playing instruments, songwriting, improvisation, or movement to music. The approach is tailored to each individual's goals, whether those are emotional, cognitive, social, or physical in nature.</p>
+            </div>
+
+            <div class="therapist-card">
+                <div class="therapist-card-icon">&#128149;</div>
+                <h2>Who They Help</h2>
+                <p>Music therapists work with people of all ages and backgrounds — from children with developmental challenges to adults managing anxiety, depression, or chronic pain, and elderly individuals living with dementia or Alzheimer's disease.</p>
+            </div>
+
+            <div class="therapist-card">
+                <div class="therapist-card-icon">&#127793;</div>
+                <h2>Evidence-Based Practice</h2>
+                <p>Music therapy is grounded in research. Therapists draw on clinical evidence to select interventions that are appropriate and effective, continuously evaluating progress and adapting treatment plans to meet each client's evolving needs.</p>
+            </div>
+
+        </div>
+
+        <div class="therapist-difference">
+            <h2>Music Therapist vs. Music Teacher</h2>
+            <div class="difference-grid">
+                <div class="difference-col">
+                    <h3>Music Therapist</h3>
+                    <ul>
+                        <li>Focuses on therapeutic goals</li>
+                        <li>Works in clinical or healthcare settings</li>
+                        <li>Assesses and evaluates client progress</li>
+                        <li>Board-certified healthcare professional</li>
+                        <li>Uses music as a therapeutic tool</li>
+                    </ul>
+                </div>
+                <div class="difference-col">
+                    <h3>Music Teacher</h3>
+                    <ul>
+                        <li>Focuses on musical skill development</li>
+                        <li>Works in educational settings</li>
+                        <li>Teaches theory, technique, and repertoire</li>
+                        <li>Certified educator</li>
+                        <li>Uses music as an artistic goal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="therapist-cta">
+            <h2>Ready to Experience Music Therapy?</h2>
+            <p>Get in touch with us to learn how our qualified music therapist can support your journey to well-being.</p>
+            <a href="contact.html" class="btn-primary">Book a Session</a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Birbeck Music | kc94 | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>

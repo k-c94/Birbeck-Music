@@ -327,6 +327,154 @@ footer {
     text-align: center;
 }
 
+/* Music Therapist Page */
+.therapist-page {
+    max-width: 1100px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+}
+
+.therapist-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.therapist-hero h1 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.therapist-hero p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.therapist-intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+.therapist-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.therapist-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.therapist-card:hover {
+    transform: translateY(-6px);
+}
+
+.therapist-card-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.therapist-card h2 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.therapist-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.7;
+}
+
+.therapist-difference {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin-bottom: 70px;
+}
+
+.therapist-difference h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 35px;
+}
+
+.difference-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.difference-col {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.difference-col h3 {
+    font-size: 1.3em;
+    color: #f39c12;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+.difference-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.difference-col ul li {
+    color: #7f8c8d;
+    font-size: 1em;
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+    line-height: 1.5;
+}
+
+.difference-col ul li:last-child {
+    border-bottom: none;
+}
+
+.difference-col ul li::before {
+    content: "✓ ";
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.therapist-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.therapist-cta h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.therapist-cta p {
+    font-size: 1.1em;
+    color: #bdc3c7;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
 /* ========================= */
 /* Responsive Styles */
 /* ========================= */
@@ -484,5 +632,38 @@ footer {
     form input,
     form textarea {
         font-size: 0.9em;
+    }
+}
+
+/* Music Therapist Page - Responsive */
+@media (max-width: 768px) {
+    .therapist-page {
+        margin-top: 100px;
+    }
+
+    .therapist-hero h1 {
+        font-size: 2em;
+    }
+
+    .therapist-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .difference-grid {
+        flex-direction: column;
+    }
+
+    .therapist-difference {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .therapist-hero h1 {
+        font-size: 1.6em;
+    }
+
+    .therapist-cta h2 {
+        font-size: 1.5em;
     }
 }
