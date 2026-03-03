@@ -835,48 +835,54 @@ footer a:hover {
     margin-bottom: 30px;
 }
 
-.goals-tabs {
+.accordion {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.tab-btn {
+.accordion-btn {
+    width: 100%;
+    text-align: left;
     background-color: #ecf0f1;
     border: none;
-    border-radius: 30px 30px 0 0;
-    padding: 12px 22px;
+    border-radius: 8px;
+    padding: 14px 22px;
     font-size: 1em;
     font-weight: bold;
     color: #7f8c8d;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background-color 0.2s, color 0.2s;
 }
 
-.tab-btn:hover {
+.accordion-btn:hover {
     background-color: #d5dbdb;
     color: #2c3e50;
 }
 
-.tab-btn.active {
+.accordion-btn.active {
     background-color: #f39c12;
     color: #fff;
+    border-radius: 8px 8px 0 0;
 }
 
-.tab-content {
-    background-color: #fff;
-    border-radius: 0 10px 10px 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    padding: 35px 40px;
+.accordion-icon {
+    font-size: 1.2em;
+    line-height: 1;
 }
 
-.tab-panel {
+.accordion-panel {
     display: none;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 25px 30px;
 }
 
-.tab-panel.active {
+.accordion-panel.open {
     display: block;
 }
 
@@ -1591,21 +1597,6 @@ footer a:hover {
         padding: 30px 20px;
     }
 
-    .goals-tabs {
-        gap: 6px;
-    }
-
-    .tab-btn {
-        padding: 10px 14px;
-        font-size: 0.9em;
-        border-radius: 6px;
-    }
-
-    .tab-content {
-        border-radius: 10px;
-        padding: 25px 20px;
-    }
-
     .why-music-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1624,13 +1615,4 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .goals-tabs {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .tab-btn {
-        border-radius: 6px;
-        text-align: left;
-    }
 }
