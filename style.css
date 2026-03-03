@@ -159,6 +159,50 @@ a {
     flex-wrap: wrap;
 }
 
+/* Inner Page Hero */
+.page-hero {
+    background-image: url('images/main.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.page-hero h1 {
+    font-size: clamp(1.8em, 4vw, 3em);
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.page-hero h2 {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+}
+
+.page-hero.services-hero-bg { background-image: url('images/services-hero.jpg'); }
+.page-hero.therapist-hero-bg { background-image: url('images/therapist-hero.jpg'); }
+
 /* Home Intro */
 .home-intro {
     text-align: center;
@@ -701,7 +745,7 @@ footer a:hover {
 /* Music Therapist Page */
 .therapist-page {
     max-width: 1100px;
-    margin: 120px auto 60px auto;
+    margin: 0 auto 60px auto;
     padding: 0 20px;
 }
 
@@ -791,48 +835,54 @@ footer a:hover {
     margin-bottom: 30px;
 }
 
-.goals-tabs {
+.accordion {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.tab-btn {
+.accordion-btn {
+    width: 100%;
+    text-align: left;
     background-color: #ecf0f1;
     border: none;
-    border-radius: 30px 30px 0 0;
-    padding: 12px 22px;
+    border-radius: 8px;
+    padding: 14px 22px;
     font-size: 1em;
     font-weight: bold;
     color: #7f8c8d;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background-color 0.2s, color 0.2s;
 }
 
-.tab-btn:hover {
+.accordion-btn:hover {
     background-color: #d5dbdb;
     color: #2c3e50;
 }
 
-.tab-btn.active {
+.accordion-btn.active {
     background-color: #f39c12;
     color: #fff;
+    border-radius: 8px 8px 0 0;
 }
 
-.tab-content {
-    background-color: #fff;
-    border-radius: 0 10px 10px 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    padding: 35px 40px;
+.accordion-icon {
+    font-size: 1.2em;
+    line-height: 1;
 }
 
-.tab-panel {
+.accordion-panel {
     display: none;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 25px 30px;
 }
 
-.tab-panel.active {
+.accordion-panel.open {
     display: block;
 }
 
@@ -949,7 +999,7 @@ footer a:hover {
 
 .services-page {
     max-width: 1100px;
-    margin: 120px auto 60px auto;
+    margin: 0 auto 60px auto;
     padding: 0 20px;
 }
 
@@ -1339,6 +1389,10 @@ footer a:hover {
         align-items: center;
     }
 
+    .page-hero {
+        height: 35vh;
+    }
+
     .btn-secondary {
         padding: 12px 25px;
         font-size: 1em;
@@ -1477,10 +1531,6 @@ footer a:hover {
 
 /* Services Page - Responsive */
 @media (max-width: 768px) {
-    .services-page {
-        margin-top: 100px;
-    }
-
     .services-hero h1 {
         font-size: 2em;
     }
@@ -1538,10 +1588,6 @@ footer a:hover {
 
 /* Music Therapist Page - Responsive */
 @media (max-width: 768px) {
-    .therapist-page {
-        margin-top: 100px;
-    }
-
     .therapist-hero h1 {
         font-size: 2em;
     }
@@ -1549,21 +1595,6 @@ footer a:hover {
     .qualifications-banner {
         flex-direction: column;
         padding: 30px 20px;
-    }
-
-    .goals-tabs {
-        gap: 6px;
-    }
-
-    .tab-btn {
-        padding: 10px 14px;
-        font-size: 0.9em;
-        border-radius: 6px;
-    }
-
-    .tab-content {
-        border-radius: 10px;
-        padding: 25px 20px;
     }
 
     .why-music-grid {
@@ -1584,13 +1615,4 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .goals-tabs {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .tab-btn {
-        border-radius: 6px;
-        text-align: left;
-    }
 }

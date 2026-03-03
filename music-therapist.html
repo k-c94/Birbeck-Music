@@ -26,14 +26,16 @@
     </ul>
 </nav>
 
+    <!-- Page Hero -->
+    <section class="page-hero therapist-hero-bg">
+        <div class="page-hero-content">
+            <h1>What is a Music Therapist?</h1>
+            
+        </div>
+    </section>
+
     <!-- Page Content -->
     <section class="therapist-page">
-
-        <!-- Hero -->
-        <div class="therapist-hero">
-            <h1>What is a Music Therapist?</h1>
-            <p>A qualified healthcare professional using music to address social, emotional, physical, cognitive, and communication goals.</p>
-        </div>
 
         <!-- Intro -->
         <div class="therapist-intro">
@@ -77,65 +79,72 @@
             </div>
         </div>
 
-        <!-- Goal Domains - Tabbed -->
+        <!-- Goal Domains - Accordion -->
         <div class="goals-section">
             <h2>Therapeutic Goal Domains</h2>
             <p class="goals-intro">Music therapists work across five core domains. Click a domain to explore how it is addressed in practice.</p>
 
-            <div class="goals-tabs">
-                <button class="tab-btn active" data-tab="social">&#129309; Social</button>
-                <button class="tab-btn" data-tab="emotional">&#128149; Emotional</button>
-                <button class="tab-btn" data-tab="physical">&#127939; Physical</button>
-                <button class="tab-btn" data-tab="cognitive">&#129504; Cognitive</button>
-                <button class="tab-btn" data-tab="communication">&#128172; Communication</button>
-            </div>
+            <div class="accordion">
 
-            <div class="tab-content">
-
-                <div class="tab-panel active" id="social">
-                    <ul class="goal-list">
-                        <li>Enabling group activities for people who are ordinarily unable to interact with others</li>
-                        <li>In care homes, joining a music group where participants share their musical preferences and associated memories to build friendships with peers</li>
-                        <li>In schools and child development settings, structuring preferred activities around taking turns and learning to lead and follow</li>
-                        <li>In hospitals, addressing potential isolation by offering an opportunity to meet new people and enjoy shared activities</li>
-                        <li>For people with acquired brain injuries, stroke, or neurological disease — offering activities they enjoy that allow them to find their own way of interacting while rebuilding their ability to communicate</li>
-                        <li>Emphasising social contact such as handshakes, physical and non-physical greetings, and eye contact for developing children or older adults with dementia</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-btn active" data-target="social">&#129309; Social <span class="accordion-icon">&#8722;</span></button>
+                    <div class="accordion-panel open" id="social">
+                        <ul class="goal-list">
+                            <li>Enabling group activities for people who are ordinarily unable to interact with others</li>
+                            <li>In care homes, joining a music group where participants share their musical preferences and associated memories to build friendships with peers</li>
+                            <li>In schools and child development settings, structuring preferred activities around taking turns and learning to lead and follow</li>
+                            <li>In hospitals, addressing potential isolation by offering an opportunity to meet new people and enjoy shared activities</li>
+                            <li>For people with acquired brain injuries, stroke, or neurological disease — offering activities they enjoy that allow them to find their own way of interacting while rebuilding their ability to communicate</li>
+                            <li>Emphasising social contact such as handshakes, physical and non-physical greetings, and eye contact for developing children or older adults with dementia</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="tab-panel" id="emotional">
-                    <ul class="goal-list">
-                        <li>Addressing past trauma in a safe, consistent therapeutic relationship — sometimes through talking, sometimes through songwriting or creating playlists, facilitated by someone with appropriate training</li>
-                        <li>Supporting people through times of duress with a professional who can remain consistent and present</li>
-                        <li>Creating music that reflects an unspeakable or difficult situation, offering a way to process experiences that feel beyond words</li>
-                        <li>For people in end-of-life care, working through songwriting or playlist creation to reflect their experiences and the impact of their changed circumstances</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-btn" data-target="emotional">&#128149; Emotional <span class="accordion-icon">&#43;</span></button>
+                    <div class="accordion-panel" id="emotional">
+                        <ul class="goal-list">
+                            <li>Addressing past trauma in a safe, consistent therapeutic relationship — sometimes through talking, sometimes through songwriting or creating playlists, facilitated by someone with appropriate training</li>
+                            <li>Supporting people through times of duress with a professional who can remain consistent and present</li>
+                            <li>Creating music that reflects an unspeakable or difficult situation, offering a way to process experiences that feel beyond words</li>
+                            <li>For people in end-of-life care, working through songwriting or playlist creation to reflect their experiences and the impact of their changed circumstances</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="tab-panel" id="physical">
-                    <ul class="goal-list">
-                        <li>Offering motivational activities to promote recovery or rehabilitation for people with a neurological disease</li>
-                        <li>Addressing fine and gross motor skills — including bimanual movement and crossing the midline — for children with delayed development</li>
-                        <li>Using rhythmic entrainment to support gait, movement, and coordination in physical rehabilitation</li>
-                        <li>Aiding pain management and reducing physiological stress responses through music</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-btn" data-target="physical">&#127939; Physical <span class="accordion-icon">&#43;</span></button>
+                    <div class="accordion-panel" id="physical">
+                        <ul class="goal-list">
+                            <li>Offering motivational activities to promote recovery or rehabilitation for people with a neurological disease</li>
+                            <li>Addressing fine and gross motor skills — including bimanual movement and crossing the midline — for children with delayed development</li>
+                            <li>Using rhythmic entrainment to support gait, movement, and coordination in physical rehabilitation</li>
+                            <li>Aiding pain management and reducing physiological stress responses through music</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="tab-panel" id="cognitive">
-                    <ul class="goal-list">
-                        <li>Building the ability for a young child with a developmental delay to retain attention on a task</li>
-                        <li>Using familiar music to support memory for people with acquired brain injuries — favourite music acts as motivation and memory interventions can include learning lyrics or playing instruments</li>
-                        <li>Building executive skills: decision-making, leading interactions, and problem-solving through structured musical activities</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-btn" data-target="cognitive">&#129504; Cognitive <span class="accordion-icon">&#43;</span></button>
+                    <div class="accordion-panel" id="cognitive">
+                        <ul class="goal-list">
+                            <li>Building the ability for a young child with a developmental delay to retain attention on a task</li>
+                            <li>Using familiar music to support memory for people with acquired brain injuries — favourite music acts as motivation and memory interventions can include learning lyrics or playing instruments</li>
+                            <li>Building executive skills: decision-making, leading interactions, and problem-solving through structured musical activities</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="tab-panel" id="communication">
-                    <ul class="goal-list">
-                        <li>Building pre-verbal communication for children, including eye contact, gestural communication, and responding to external cues</li>
-                        <li>Developing verbal and non-verbal communication for children with developmental delays</li>
-                        <li>Rebuilding speech patterns for people with acquired brain injuries by practising speech sounds, breathing, and patterns within a musical context, then transferring skills to everyday speech</li>
-                        <li>Building expressive communication to enhance someone's ability to articulate their thoughts, feelings, and needs</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-btn" data-target="communication">&#128172; Communication <span class="accordion-icon">&#43;</span></button>
+                    <div class="accordion-panel" id="communication">
+                        <ul class="goal-list">
+                            <li>Building pre-verbal communication for children, including eye contact, gestural communication, and responding to external cues</li>
+                            <li>Developing verbal and non-verbal communication for children with developmental delays</li>
+                            <li>Rebuilding speech patterns for people with acquired brain injuries by practising speech sounds, breathing, and patterns within a musical context, then transferring skills to everyday speech</li>
+                            <li>Building expressive communication to enhance someone's ability to articulate their thoughts, feelings, and needs</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -145,7 +154,7 @@
         <div class="therapist-cta">
             <h2>Ready to Experience Music Therapy?</h2>
             <p>Get in touch with us to learn how our qualified music therapist can support your journey to well-being.</p>
-            <a href="contact.html" class="btn-primary">Contact Me</a>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
         </div>
 
     </section>
@@ -163,15 +172,21 @@
         navLinks.classList.toggle('active');
     });
 
-    // Goal domain tabs
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabPanels = document.querySelectorAll('.tab-panel');
-    tabBtns.forEach(btn => {
+    // Goal domain accordion
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabPanels.forEach(p => p.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById(btn.dataset.tab).classList.add('active');
+            const panel = document.getElementById(btn.dataset.target);
+            const isOpen = btn.classList.contains('active');
+            document.querySelectorAll('.accordion-btn').forEach(b => {
+                b.classList.remove('active');
+                b.querySelector('.accordion-icon').textContent = '+';
+            });
+            document.querySelectorAll('.accordion-panel').forEach(p => p.classList.remove('open'));
+            if (!isOpen) {
+                btn.classList.add('active');
+                btn.querySelector('.accordion-icon').textContent = '−';
+                panel.classList.add('open');
+            }
         });
     });
 </script>
