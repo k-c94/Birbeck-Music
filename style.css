@@ -680,27 +680,6 @@ a {
     box-shadow: 0 4px 12px rgba(0,0,0,0.07);
 }
 
-.form-success,
-.form-error {
-    border-radius: 8px;
-    padding: 14px 18px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 0.95em;
-}
-
-.form-success {
-    background-color: #eafaf1;
-    color: #1e8449;
-    border: 1px solid #a9dfbf;
-}
-
-.form-error {
-    background-color: #fdf2f2;
-    color: #c0392b;
-    border: 1px solid #f1a9a0;
-}
-
 /* Form styles */
 form {
     display: flex;

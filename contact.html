@@ -52,13 +52,7 @@
 
             <!-- Right: form -->
             <div class="contact-form-wrapper">
-                <div id="form-success" class="form-success" style="display:none;">
-                    <span>&#10003;</span> Your message has been sent — we'll be in touch soon!
-                </div>
-                <div id="form-error" class="form-error" style="display:none;">
-                    Something went wrong. Please try again or email us directly.
-                </div>
-                <form id="contact-form">
+                <form action="mailto:tom@birbeckmusic.co.uk" method="get" enctype="text/plain">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
 
@@ -68,7 +62,7 @@
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <button type="submit" id="submit-btn">Send Message</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
 
@@ -80,43 +74,10 @@
         <p>&copy; Birbeck Music | <a href="https://github.com/k-c94">Designed by kc94</a> | All Rights Reserved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        // Mobile menu
         const burger = document.querySelector('.burger');
         const navLinks = document.querySelector('.nav-links');
         burger.addEventListener('click', () => navLinks.classList.toggle('active'));
-
-        // EmailJS — replace the three placeholder values below with your own
-        emailjs.init('YOUR_PUBLIC_KEY');          // Account > API Keys > Public Key
-
-        document.getElementById('contact-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const btn = document.getElementById('submit-btn');
-            const successMsg = document.getElementById('form-success');
-            const errorMsg = document.getElementById('form-error');
-
-            btn.textContent = 'Sending…';
-            btn.disabled = true;
-            successMsg.style.display = 'none';
-            errorMsg.style.display = 'none';
-
-            emailjs.sendForm(
-                'YOUR_SERVICE_ID',    // Email Services > your service ID
-                'YOUR_TEMPLATE_ID',   // Email Templates > your template ID
-                this
-            ).then(() => {
-                successMsg.style.display = 'block';
-                this.reset();
-                btn.textContent = 'Send Message';
-                btn.disabled = false;
-            }, () => {
-                errorMsg.style.display = 'block';
-                btn.textContent = 'Send Message';
-                btn.disabled = false;
-            });
-        });
     </script>
 </body>
 </html>
